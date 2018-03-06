@@ -1,0 +1,1710 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:untitled-ontology-6="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6">
+        <rdfs:comment>This is a doughnut ontology that describes various doughnuts based on their ingredients</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Definition">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#definition">
+        <rdfs:comment>The form in which the doughnut is shaped</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasBase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasBase">
+        <rdfs:comment>the base of the doughnut which is determined by the way it is leavened</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasFilling -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasFilling">
+        <rdfs:comment>the filling injected into the doughnut</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping">
+        <rdfs:comment>the toppings which the doughnut is topped with</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto">
+        <rdfs:comment>the shape into which the doughnut is formed</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Apple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Apple">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#FruitPieces"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Fritter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Chunks of apple added to the doughnut batter</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#AppleFritter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#AppleFritter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Fritter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Holes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#KrispyKreme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#RobinsDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#YeastDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Apple"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ClassicGlaze"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Doughnut shaped into a fritter or holes with apple pieces baked inside</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BakersDozenDonuts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BakersDozenDonuts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CanadianDoughnutChains"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BavarianCream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BavarianCream">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Cream"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ConfectionersSugar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#FruitGarnish"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>A vanilla custard usually accompanied by fruit or powdered sugar</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BavarianCreamDoughnut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BavarianCreamDoughnut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ConfectionersSugar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#FruitGarnish"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BakersDozenDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CoffeeTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CountryStyle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#KrispyKreme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#RobinsDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#YeastDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BavarianCream"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Filled"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Dougnut filled with bavarian cream and topped with confectioners sugar or fruit garnish</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Blueberry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Blueberry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#FruitPieces"/>
+        <definition>Blueberries added to the batter of a doughnut</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BlueberryFilled -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BlueberryFilled">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Filled"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Holes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BakersDozenDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CoffeeTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CountryStyle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#RobinsDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#YeastDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BlueberryJelly"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ConfectionersSugar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Doughnut filled with blueberry jelly and topped with confectioners sugar</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BlueberryJelly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BlueberryJelly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Jelly"/>
+        <definition>A fruit compote made out of sweetened blueberries</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BostonCream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BostonCream">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Cream"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ChocolateIcing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>A vanilla custard usually accompanied with chocolate icing</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BostonCreamDoughnut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BostonCreamDoughnut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BakersDozenDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CoffeeTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CountryStyle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#KrispyKreme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#RobinsDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#YeastDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BostonCream"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ChocolateIcing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Filled"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Doughnut filled with boston cream and topped with chocolate icing</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CakeDoughnut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CakeDoughnut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutBase"/>
+        <definition>A doughnut leavened with baking powder</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CanadianDoughnutChains -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CanadianDoughnutChains">
+        <definition>This is the class of all doughnut chains located in Canada</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CanadianMaple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CanadianMaple">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#YeastDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BostonCream"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#MapleIcing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Filled"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ChocolateDip -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ChocolateDip">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BakersDozenDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CoffeeTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CountryStyle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#RobinsDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#YeastDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Ring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Ring doughnut with chocolate icing and sprinkles</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ChocolateIcing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ChocolateIcing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Icing"/>
+        <definition>Chocolate-flavoured icing spread onto the top of a doughnut</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ChocolatePeanut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ChocolatePeanut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Specialty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ChocolateIcing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Peanut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#YeastDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#NoFilling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Ring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#LuckysDoughnuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Ring doughnut topped with chocolate icing and peanuts</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ChocolateSprinkles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ChocolateSprinkles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Sprinkles"/>
+        <definition>Chocolate flavoured sprinkles</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Citrus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Citrus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Glaze"/>
+        <definition>A glaze made with citrus juice</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Classic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Classic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#PopularVarieties"/>
+        <definition>Traditional types of doughnuts</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ClassicBlueberry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ClassicBlueberry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Holes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Ring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CakeDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Blueberry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#NoFilling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ClassicGlaze"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Blueberry glazed doughnut shaped into a ring or holes</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ClassicGlaze -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ClassicGlaze">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Glaze"/>
+        <definition>Traditional glaze made from powdered sugar, butter, and vanilla</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Coconut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Coconut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutToppings"/>
+        <definition>Shredded pieces of coconut which the doughnut is rolled in</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CoconutDoughnut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CoconutDoughnut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Holes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Ring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#RobinsDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CakeDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#NoFilling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Coconut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Ring or doughnut holes with coconut topping</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CoffeeTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CoffeeTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CanadianDoughnutChains"/>
+        <definition>Canadian doughnut chain with headquarters in Toronto, Ontario</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ConfectionersSugar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ConfectionersSugar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutToppings"/>
+        <definition>Ultra-fine sugar for doughnut to be rolled in, also known as icing sugar</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CountryStyle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CountryStyle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CanadianDoughnutChains"/>
+        <definition>Ontario-based doughnut chain</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Cream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Cream">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutFillings"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Filled"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>A sweetened cream used as a filling for doughnuts</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Cruller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Cruller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutShape"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Citrus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ClassicGlaze"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CakeDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Twisted with a hole in the centre</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CrullerDoughnut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CrullerDoughnut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Citrus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ClassicGlaze"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Cruller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Holes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#KrispyKreme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#LuckysDoughnuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CakeDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#NoFilling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Cruller shaped or doughnut holes with either a classic or orange glaze</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Curd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Curd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutFillings"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Filled"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Holes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ConfectionersSugar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>A curd made of fruit</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Doughnut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Doughnut">
+        <rdfs:comment>A deep-fried dough which is typically eaten as a dessert or as an accompaniment to coffee</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutBase">
+        <definition>This is the class of all doughnut bases</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutFillings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutFillings">
+        <definition>This is the class of all doughnut fillings</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutShape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutShape">
+        <definition>This is the class of all doughnut shapes</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutToppings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutToppings">
+        <definition>This is the class of all doughnut toppings</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Dutchie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Dutchie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutShape"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ClassicGlaze"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Square shaped doughnut</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DutchieDoughnut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DutchieDoughnut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Dutchie"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Holes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#YeastDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Raisin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ClassicGlaze"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Glazed doughnut made into dutchie or doughnut hole shapes, filled with raisins</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Filled -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Filled">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutShape"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasFilling"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BlueberryJelly"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasFilling"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Jelly"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasFilling"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#StrawberryJelly"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ConfectionersSugar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Round and filled with jelly or custard</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Fritter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Fritter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutShape"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasFilling"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#FruitPieces"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Imperfect rounded shape</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#FruitGarnish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#FruitGarnish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutToppings"/>
+        <definition>A slice of fruit added to the top of a doughnut</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#FruitPieces -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#FruitPieces">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutFillings"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Fritter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Holes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Ring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Pieces of fruit added to the batter of the doughnut before frying</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Glaze -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Glaze">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutToppings"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Icing"/>
+        <definition>A thin layer of icing that coats the entire doughnut</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Holes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Holes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutShape"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Icing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Sprinkles"/>
+        <definition>The ball-shape comes from the centre of a ring doughnut or by a small amount of dough being fried to make miniature doughnuts for flavours not found in a ring-shaped doughnut</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Icing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Icing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutToppings"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Sprinkles"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>A thick layer of icing that is placed on top of the doughnut</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Jelly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Jelly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutFillings"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Filled"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Holes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>A fruit compote</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#KrispyKreme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#KrispyKreme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CanadianDoughnutChains"/>
+        <definition>American-based doughnut company which has stores in Canada</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Lemon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Lemon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Curd"/>
+        <definition>Lemon curd used to fill a doughnut</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#LuckysDoughnuts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#LuckysDoughnuts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CanadianDoughnutChains"/>
+        <definition>A doughnut chain located in British Columbia which specializes in more gourmet doughnuts</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#MapleIcing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#MapleIcing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Icing"/>
+        <definition>Maple-flavoured icing, very popular in Canada</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#NoFilling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#NoFilling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutFillings"/>
+        <definition>No filling is added to the doughnut</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Nuts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Nuts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutToppings"/>
+        <definition>Chopped nuts that are placed onto the top of a doughnut</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#OrangePistachio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#OrangePistachio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Specialty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Citrus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Pistachio"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#YeastDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#NoFilling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Ring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#LuckysDoughnuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Ring doughnut topped with citrus glaze and pistachios</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Peanut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Peanut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Nuts"/>
+        <definition>Peanut topping for doughnut, compliments chocolate well</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Pistachio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Pistachio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Nuts"/>
+        <definition>Pistachio topping for doughnut</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#PopularVarieties -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#PopularVarieties">
+        <definition>Types of doughnuts that Canadians enjoy eating</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#RainbowSprinkles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#RainbowSprinkles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Sprinkles"/>
+        <definition>Multi-coloured sprinkles</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Raisin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Raisin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#FruitPieces"/>
+        <definition>dehydrated grapes</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Ring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Ring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutShape"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Icing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#NoFilling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Circular with a round hole in the centre</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#RobinsDonuts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#RobinsDonuts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CanadianDoughnutChains"/>
+        <definition>Popular throughout Canada with a large number of locations. Doughnut chain which originated in Thunder Bay, Ontario.</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#SaltedCaramel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#SaltedCaramel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Specialty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#LuckysDoughnuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CakeDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#NoFilling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#SaltedCaramelGlaze"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Ring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Ring doughnut with a salted caramel glaze</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#SaltedCaramelGlaze -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#SaltedCaramelGlaze">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Glaze"/>
+        <definition>Glaze made with salted caramel</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#SourCream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#SourCream">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Glaze"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Ring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Glaze made with sour cream</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#SourCreamGlazed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#SourCreamGlazed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Holes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Ring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#KrispyKreme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CakeDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#NoFilling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#SourCream"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Ring or doughnut holes glazed with sour cream glaze</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Specialty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Specialty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#PopularVarieties"/>
+        <definition>Gourmet doughnuts with specialty ingredients added</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Sprinkles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Sprinkles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutToppings"/>
+        <definition>Confectionary pieces that are sprinkled onto the doughnut</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Strawberry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Strawberry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#RainbowSprinkles"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#StrawberryIcing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CoffeeTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#RobinsDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#YeastDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#NoFilling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Ring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Ring doughnut topped with strawberry icing and rainbow sprinkles</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#StrawberryFilled -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#StrawberryFilled">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Filled"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Holes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BakersDozenDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CoffeeTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CountryStyle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#RobinsDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#YeastDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#StrawberryJelly"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ConfectionersSugar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Doughnut filled with strawberry jelly and topped with confectioners sugar</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#StrawberryIcing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#StrawberryIcing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Icing"/>
+        <definition>Strawberry-flavoured icing spread onto the top of a doughnut</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#StrawberryJelly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#StrawberryJelly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Jelly"/>
+        <definition>A fruit compote made out of sweetened strawberries</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#TimHortons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#TimHortons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CanadianDoughnutChains"/>
+        <definition>One of Canada&apos;s most popular doughnut chains</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#VanillaDip -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#VanillaDip">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Classic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#RainbowSprinkles"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#VanillaIcing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#BakersDozenDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CoffeeTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#CountryStyle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#RobinsDonuts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isSoldBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#TimHortons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#YeastDoughnut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasFilling"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#NoFilling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#isFormedInto"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Ring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Ring doughnut with vanilla icing and some multi-coloured sprinkles</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#VanillaIcing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#VanillaIcing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#Icing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#ChocolateSprinkles"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition>Vanilla-flavoured icing spread onto the top of a doughnut</definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#YeastDoughnut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#YeastDoughnut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/moonstick/ontologies/2018/2/untitled-ontology-6#DoughnutBase"/>
+        <definition>Doughnut leavened with yeast</definition>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
